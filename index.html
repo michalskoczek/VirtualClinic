@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Website of Virtual Clinic">
+  <meta name="keywords" content="Virtual, clinic, virtual clinic, health, mobile care">
+  <meta name="author" content="Michał Skoczek">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/css/main.css">
@@ -12,17 +15,38 @@
 <body>
   <div class="wrapper">
     <header class="header wrapper__header">
-      <!-- <div class="header__image">
-        <img src="" alt="" class="header__logo">
-      </div>
-      <button class="header__button-menu"></button> -->
+      <img src="img/stethoscope.png" alt="logo" class="header__logo">
+      <button class="header__button-menu">
+        <span class="header__hamburger-box">
+          <span class="header__hamburger-inner"></span>
+        </span>
+      </button>
     </header>
-    <section class="welcome-page wrapper__welcome-page"></section>
+    <nav class="navigation wrapper__navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="/">O nas</a></li>
+        <li class="navigation__item"><a href="/">Usługi</a></li>
+        <li class="navigation__item"><a href="/">Dla pacjenta</a></li>
+        <li class="navigation__item"><a href="/">Dla lekarza</a></li>
+        <li class="navigation__item"><a href="/">Kontakt</a></li>
+        <li class="navigation__item navigation__item--button"><a class="navigation__log-in-btn" href="/">Zaloguj</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="welcome-page wrapper__welcome-page">
+      <!-- <img class="welcome-page__image" src="img/nurse2.jpg" alt="nurse"> -->
+      <h1 class="welcome-page__name">
+        <span class="welcome-page__first-word">Wirtualna</span>
+        <span class="welcome-page__second-word">Przychodnia</span>
+      </h1>
+      <h2 class="welcome-page__slogan">Twoje zdrowie zawsze pod ręką</h2>
+    </section>
     <section class="about-us wrapper__about-us"></section>
     <section class="services wrapper__services"></section>
     <section class="benefits wrapper__benefits"></section>
     <footer class="contact wrapper__contact"></footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
