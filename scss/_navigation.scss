@@ -1,0 +1,48 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  transform: translateX(-60vw);
+  transition: transform .3s .1s ease-in-out;
+  margin-top: 50px;
+  z-index: 1;
+
+  &--active {
+    transform: translateX(0);
+  }
+
+  &--active~section,
+  &--active~footer {
+    opacity: 0.3;
+  }
+
+  &__list {
+    list-style: none;
+    margin-top: 55px;
+    padding-left: 15px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    a {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &--button {
+      text-align: center;
+      margin: 50px 35px 0 20px;
+
+      .navigation__log-in-btn {
+        display: block;
+        width: 100%;
+        border: #fff solid 1px;
+        padding: 5px 0;
+      }
+    }
+
+  }
+}
