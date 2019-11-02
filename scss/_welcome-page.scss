@@ -1,0 +1,7 @@
+.welcome-page {
+  transition: opacity .3s .1s ease-in-out;
+  background: url(../img/hospital.jpg) no-repeat center;
+  background-size: cover;
+  opacity: 0.5;
+  // filter: blur(1px);
+}
