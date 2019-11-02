@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+:root {
+  font-size: 10px;
+}
+
+p,
+h1,
+h2,
+h3,
+span,
+li,
+a {
+  cursor: default;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
