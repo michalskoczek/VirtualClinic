@@ -1,0 +1,22 @@
+@mixin wrapperElements() {
+  flex-basis: 100%;
+  min-height: 100vh;
+}
+
+// @mixin wrapperElementsFixed() {
+//   flex-basis: 100%;
+//   height: calc(100vh - 60px);
+//   margin-top: 60px;
+// }
+
+@mixin transitionOpacity {
+  transition: opacity .3s .1s ease-in-out;
+}
+
+@mixin hamburgerLine {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: $main-color;
+}
