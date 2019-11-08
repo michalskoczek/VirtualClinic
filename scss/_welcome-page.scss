@@ -4,17 +4,20 @@
   transition: opacity .3s .1s ease-in-out;
   position: relative;
 
+
+  &::after {
+    @include lineAfterSection
+  }
+
   &__name {
     flex-basis: 100%;
     height: 40%;
   }
 
-  &__first-word {
+  &__first-word,
+  &__second-word {
     display: block;
     position: absolute;
-    top: 50px;
-    left: 30px;
-    width: calc(100% - 30px);
     padding: 0 0 0 10px;
     font: italic 700 3rem/1.6 $main-font;
     background-color: $second-main-color;
@@ -22,17 +25,16 @@
     letter-spacing: 0.5px;
   }
 
+  &__first-word {
+    top: 50px;
+    left: 30px;
+    width: calc(100% - 30px);
+  }
+
   &__second-word {
-    display: block;
-    position: absolute;
     top: 110px;
     left: 60px;
     width: calc(100% - 60px);
-    padding: 0 0 0 10px;
-    font: italic 700 3rem/1.6 $main-font;
-    background-color: $second-main-color;
-    color: #fff;
-    letter-spacing: 0.5px;
   }
 
   &__slogan {
