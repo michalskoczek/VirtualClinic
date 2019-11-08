@@ -19,32 +19,33 @@
   &__welcome-page {
     @include transitionOpacity;
     flex-basis: 100%;
-    height: calc(100vh - 50px);
+    height: calc(90vh - 50px);
     margin-top: 50px;
   }
 
   &__about-us {
     @include transitionOpacity;
     flex-basis: 90%;
-    min-height: 100vh;
-    background-color: yellow;
+    // min-height: 100vh;
+    margin-top: 50px;
   }
 
   &__services {
-    @include wrapperElements();
     @include transitionOpacity;
-    background-color: green;
+    flex-basis: 90%;
+    margin-top: 70px;
   }
 
   &__benefits {
-    @include wrapperElements();
     @include transitionOpacity;
-    background-color: red;
+    flex-basis: 90%;
+    margin-top: 75px;
   }
 
   &__contact {
-    @include wrapperElements();
     @include transitionOpacity;
-    background-color: blue;
+    flex-basis: 90%;
+    min-height: 100vh;
+    background-color: brown;
   }
 }
