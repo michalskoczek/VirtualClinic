@@ -1,0 +1,23 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+
+  &::after {
+    @include lineAfterSection;
+  }
+
+  &__intro,
+  &__end,
+  &__main {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 15px;
+  }
+
+  &__main {
+    font-size: 1.6rem;
+  }
+}
