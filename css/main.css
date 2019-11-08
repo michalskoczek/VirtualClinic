@@ -57,7 +57,7 @@ html {
   transition: opacity .3s .1s ease-in-out;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: calc(100vh - 50px);
+  height: calc(90vh - 50px);
   margin-top: 50px;
 }
 
@@ -66,35 +66,32 @@ html {
   transition: opacity .3s .1s ease-in-out;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
-  min-height: 100vh;
-  background-color: yellow;
+  margin-top: 50px;
 }
 
 .wrapper__services {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  min-height: 100vh;
   -webkit-transition: opacity .3s .1s ease-in-out;
   transition: opacity .3s .1s ease-in-out;
-  background-color: green;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  margin-top: 70px;
 }
 
 .wrapper__benefits {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  min-height: 100vh;
   -webkit-transition: opacity .3s .1s ease-in-out;
   transition: opacity .3s .1s ease-in-out;
-  background-color: red;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  margin-top: 75px;
 }
 
 .wrapper__contact {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  min-height: 100vh;
   -webkit-transition: opacity .3s .1s ease-in-out;
   transition: opacity .3s .1s ease-in-out;
-  background-color: blue;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  min-height: 100vh;
+  background-color: brown;
 }
 
 .header {
@@ -248,18 +245,28 @@ html {
   position: relative;
 }
 
+.welcome-page::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 75%;
+  bottom: -30px;
+  left: 50%;
+  background-color: #00dce9;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .welcome-page__name {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 40%;
 }
 
-.welcome-page__first-word {
+.welcome-page__first-word, .welcome-page__second-word {
   display: block;
   position: absolute;
-  top: 50px;
-  left: 30px;
-  width: calc(100% - 30px);
   padding: 0 0 0 10px;
   font: italic 700 3rem/1.6 "Montserrat", sans-serif;
   background-color: #00ACB5;
@@ -267,17 +274,16 @@ html {
   letter-spacing: 0.5px;
 }
 
+.welcome-page__first-word {
+  top: 50px;
+  left: 30px;
+  width: calc(100% - 30px);
+}
+
 .welcome-page__second-word {
-  display: block;
-  position: absolute;
   top: 110px;
   left: 60px;
   width: calc(100% - 60px);
-  padding: 0 0 0 10px;
-  font: italic 700 3rem/1.6 "Montserrat", sans-serif;
-  background-color: #00ACB5;
-  color: #fff;
-  letter-spacing: 0.5px;
 }
 
 .welcome-page__slogan {
@@ -301,5 +307,136 @@ html {
   opacity: 0.6;
   -webkit-filter: blur(1.5px);
           filter: blur(1.5px);
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.about-us::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 75%;
+  bottom: -30px;
+  left: 50%;
+  background-color: #00dce9;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about-us__intro, .about-us__end, .about-us__main {
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.4;
+  padding-bottom: 15px;
+}
+
+.about-us__main {
+  font-size: 1.6rem;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.services::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 75%;
+  bottom: -30px;
+  left: 50%;
+  background-color: #00dce9;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.services .service {
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+.services .service__img {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #00ACB5;
+}
+
+.services .service__title {
+  font-size: 1.6rem;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.services .service__description {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits__wrap {
+  margin-bottom: 35px;
+}
+
+.benefits__title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.benefits__items-list {
+  list-style: none;
+}
+
+.benefits__item {
+  position: relative;
+  margin: 0 0 10px 30px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.benefits__item::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  height: 15px;
+  width: 15px;
+  background-color: #00ACB5;
+  border-radius: 50%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */
