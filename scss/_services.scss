@@ -7,6 +7,10 @@
     @include lineAfterSection;
   }
 
+  .service:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+
   .service {
     text-align: center;
     margin: 0 0 25px 0;
