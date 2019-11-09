@@ -26,7 +26,6 @@
   &__about-us {
     @include transitionOpacity;
     flex-basis: 90%;
-    // min-height: 100vh;
     margin-top: 50px;
   }
 
@@ -44,8 +43,7 @@
 
   &__contact {
     @include transitionOpacity;
-    flex-basis: 90%;
-    min-height: 100vh;
-    background-color: brown;
+    flex-basis: 100%;
+    background-color: $contact-color;
   }
 }
