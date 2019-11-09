@@ -1,6 +1,79 @@
 .contact {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
+  &__title {
+    padding: 5px 0;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .contact__input-name,
+    .contact__input-mail,
+    .contact__textarea {
+      flex-basis: 80%;
+      padding: 5px 5px;
+      margin: 5px 0;
+      font-size: 1.4rem;
+    }
+
+    .contact__button {
+      flex-basis: 80%;
+      margin: 5px 0;
+      padding: 8px 0;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: 1px solid white;
+      background-color: #000;
+      color: #fff
+    }
+  }
+
+  &__wrap {
+    flex-basis: 80%;
+    margin: 10px 0;
+
+    .contact__social {
+      position: relative;
+      margin: 20px 0;
+      padding-left: 70px;
+      font-size: 1.6rem;
+      line-height: 44px;
+      color: #fff;
+
+      &--number::before {
+        @include socialIcon;
+        content: url('https://image.flaticon.com/icons/svg/0/191.svg');
+      }
+
+      &--mail::before {
+        @include socialIcon;
+        content: url('https://image.flaticon.com/icons/svg/70/70562.svg');
+      }
+
+      &--facebook::before {
+        @include socialIcon;
+        content: url('https://image.flaticon.com/icons/svg/733/733603.svg');
+      }
+    }
+  }
+
+  &__copyright {
+    width: 100%;
+    padding: 3px 20px 3px 0;
+    text-align: right;
+    color: #fff;
+    background-color: #000;
+  }
 
 }
