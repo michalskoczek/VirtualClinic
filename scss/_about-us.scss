@@ -17,7 +17,15 @@
     padding-bottom: 15px;
   }
 
+  &__intro {
+    padding-top: 25px;
+  }
+
   &__main {
     font-size: 1.6rem;
+  }
+
+  &__end {
+    padding-bottom: 0px
   }
 }
