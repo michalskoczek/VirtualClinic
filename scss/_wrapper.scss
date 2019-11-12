@@ -27,18 +27,42 @@
     @include transitionOpacity;
     flex-basis: 90%;
     margin-top: 50px;
+
+    @media (orientation: portrait) and (min-width: 768px) {
+      flex-basis: 80%;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      flex-basis: 75%;
+    }
   }
 
   &__services {
     @include transitionOpacity;
     flex-basis: 90%;
     margin-top: 70px;
+
+    @media (orientation: portrait) and (min-width: 768px) {
+      flex-basis: 80%;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      flex-basis: 75%;
+    }
   }
 
   &__benefits {
     @include transitionOpacity;
     flex-basis: 90%;
     margin-top: 75px;
+
+    @media (orientation: portrait) and (min-width: 768px) {
+      flex-basis: 80%;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      flex-basis: 75%;
+    }
   }
 
   &__contact {
