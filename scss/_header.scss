@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  box-shadow: 0 0 5px 0 $second-main-color;
 
   &__button-menu {
     display: inline-block;
@@ -30,7 +31,6 @@
     width: 30px;
     height: 30px;
     padding: 0;
-    // margin-right: 15px;
   }
 
   &__hamburger-inner {
