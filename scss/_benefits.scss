@@ -5,6 +5,10 @@
   &__wrap {
     flex-basis: 100%;
     margin-bottom: 35px;
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__title {
@@ -12,6 +16,14 @@
     font-size: 2rem;
     margin: 0 0 15px 0;
     letter-spacing: 1px;
+
+    @media (orientation: portrait) and (min-width: 768px) {
+      font-size: 2.2rem;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      font-size: 2.3rem;
+    }
   }
 
   &__items-list {
@@ -24,6 +36,13 @@
     font-size: 1.3rem;
     line-height: 1.5;
 
+    @media (orientation: portrait) and (min-width: 768px) {
+      font-size: 1.5rem;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      font-size: 1.6rem;
+    }
 
     &::before {
       content: '';
@@ -34,6 +53,14 @@
       width: 15px;
       background-color: $second-main-color;
       border-radius: 50%;
+
+      @media (orientation: portrait) and (min-width: 768px) {
+        top: 5px;
+      }
+
+      @media (orientation: landscape) and (min-width: 1024px) {
+        top: 6px;
+      }
     }
   }
 }
