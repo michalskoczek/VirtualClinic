@@ -10,6 +10,10 @@
     letter-spacing: 1px;
     text-align: center;
     color: #fff;
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      font-size: 2.3rem;
+    }
   }
 
   &__form {
@@ -64,6 +68,10 @@
       &--facebook::before {
         @include socialIcon;
         content: url('https://image.flaticon.com/icons/svg/733/733603.svg');
+      }
+
+      @media (orientation: landscape) and (min-width: 1024px) {
+        font-size: 1.8rem;
       }
     }
   }
