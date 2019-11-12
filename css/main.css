@@ -69,6 +69,20 @@ html {
   margin-top: 50px;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .wrapper__about-us {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .wrapper__about-us {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
 .wrapper__services {
   -webkit-transition: opacity .3s .1s ease-in-out;
   transition: opacity .3s .1s ease-in-out;
@@ -77,12 +91,40 @@ html {
   margin-top: 70px;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .wrapper__services {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .wrapper__services {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+}
+
 .wrapper__benefits {
   -webkit-transition: opacity .3s .1s ease-in-out;
   transition: opacity .3s .1s ease-in-out;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
   margin-top: 75px;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .wrapper__benefits {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .wrapper__benefits {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
 }
 
 .wrapper__contact {
@@ -104,6 +146,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+  -webkit-box-shadow: 0 0 5px 0 #00ACB5;
+          box-shadow: 0 0 5px 0 #00ACB5;
 }
 
 .header__button-menu {
@@ -211,9 +255,34 @@ html {
   padding-left: 15px;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .navigation__list {
+    margin-top: 60px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 460px) {
   .navigation__list {
     margin-top: 15px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .navigation__list {
+    margin-top: 30px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 731px) {
+  .navigation__list {
+    margin-top: 34px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .navigation__list {
+    margin-top: 50px;
+    padding-left: 25px;
   }
 }
 
@@ -225,6 +294,18 @@ html {
   font-size: 1.8rem;
   text-decoration: none;
   color: #fff;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .navigation__item a {
+    font-size: 2.1rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .navigation__item a {
+    font-size: 2.1rem;
+  }
 }
 
 .navigation__item--button {
@@ -245,9 +326,33 @@ html {
   }
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .navigation__item {
+    margin-bottom: 45px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 460px) {
   .navigation__item {
     margin-bottom: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .navigation__item {
+    margin-bottom: 23px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 731px) {
+  .navigation__item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .navigation__item {
+    margin-bottom: 40px;
   }
 }
 
@@ -283,7 +388,19 @@ html {
 
 @media (orientation: landscape) and (min-width: 460px) {
   .welcome-page__name {
-    height: 55%;
+    height: 140px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .welcome-page__name {
+    height: 160px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome-page__name {
+    height: 240px;
   }
 }
 
@@ -297,17 +414,83 @@ html {
   letter-spacing: 0.5px;
 }
 
+@media (orientation: portrait) and (min-width: 411px) {
+  .welcome-page__first-word, .welcome-page__second-word {
+    font: italic 700 3.5rem/1.6 "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .welcome-page__first-word, .welcome-page__second-word {
+    font: italic 700 4.2rem/1.7 "Montserrat", sans-serif;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome-page__first-word, .welcome-page__second-word {
+    font: italic 700 4.2rem/1.7 "Montserrat", sans-serif;
+    letter-spacing: 1.2px;
+  }
+}
+
 .welcome-page__first-word {
   top: 50px;
   left: 30px;
   width: calc(100% - 30px);
 }
 
+@media (orientation: portrait) and (min-width: 360px) {
+  .welcome-page__first-word {
+    top: 60px;
+    left: 50px;
+    width: calc(100% - 50px);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+  .welcome-page__first-word {
+    top: 70px;
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .welcome-page__first-word {
+    top: 80px;
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+}
+
 @media (orientation: landscape) and (min-width: 460px) {
   .welcome-page__first-word {
     top: 20px;
-    left: 150px;
-    width: calc(100% - 150px);
+    left: 135px;
+    width: calc(100% - 135px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .welcome-page__first-word {
+    left: 180px;
+    width: calc(100% - 180px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 731px) {
+  .welcome-page__first-word {
+    left: 210px;
+    width: calc(100% - 210px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome-page__first-word {
+    top: 60px;
+    left: 290px;
+    width: calc(100% - 290px);
   }
 }
 
@@ -317,11 +500,57 @@ html {
   width: calc(100% - 60px);
 }
 
+@media (orientation: portrait) and (min-width: 360px) {
+  .welcome-page__second-word {
+    top: 120px;
+    left: 80px;
+    width: calc(100% - 80px);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+  .welcome-page__second-word {
+    top: 140px;
+    left: 90px;
+    width: calc(100% - 90px);
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .welcome-page__second-word {
+    top: 170px;
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
 @media (orientation: landscape) and (min-width: 460px) {
   .welcome-page__second-word {
     top: 77px;
     left: 180px;
     width: calc(100% - 180px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .welcome-page__second-word {
+    left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 731px) {
+  .welcome-page__second-word {
+    left: 270px;
+    width: calc(100% - 270px);
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome-page__second-word {
+    top: 150px;
+    left: 380px;
+    width: calc(100% - 380px);
   }
 }
 
@@ -335,10 +564,44 @@ html {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+@media (orientation: portrait) and (min-width: 411px) {
+  .welcome-page__slogan {
+    max-height: 130px;
+    font: 700 3rem/1.3 "Montserrat", sans-serif;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .welcome-page__slogan {
+    max-height: 130px;
+    font: 700 4rem/1.5 "Montserrat", sans-serif;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 460px) {
   .welcome-page__slogan {
     max-height: 75px;
     font: 700 2.5rem/1.3 "Montserrat", sans-serif;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+  .welcome-page__slogan {
+    padding: 5px 75px 10px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 731px) {
+  .welcome-page__slogan {
+    padding: 5px 125px 10px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .welcome-page__slogan {
+    max-height: 100px;
+    font: 700 3rem/1.5 "Montserrat", sans-serif;
+    padding: 5px 180px 10px;
   }
 }
 
@@ -389,12 +652,38 @@ html {
   padding-bottom: 15px;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .about-us__intro, .about-us__end, .about-us__main {
+    font-size: 1.5rem;
+    padding-bottom: 25px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .about-us__intro, .about-us__end, .about-us__main {
+    font-size: 1.5rem;
+    padding-bottom: 40px;
+  }
+}
+
 .about-us__intro {
   padding-top: 25px;
 }
 
 .about-us__main {
   font-size: 1.6rem;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .about-us__main {
+    font-size: 1.8rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .about-us__main {
+    font-size: 1.8rem;
+  }
 }
 
 .about-us__end {
@@ -434,10 +723,34 @@ html {
   margin: 0 0 25px 0;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .services .service {
+    margin: 0 0 35px 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .services .service {
+    margin: 0 0 40px 0;
+  }
+}
+
 .services .service__img {
   font-size: 3.5rem;
   line-height: 1.5;
   color: #00ACB5;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .services .service__img {
+    font-size: 4rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .services .service__img {
+    font-size: 4rem;
+  }
 }
 
 .services .service__title {
@@ -446,9 +759,33 @@ html {
   letter-spacing: 1px;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .services .service__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .services .service__title {
+    font-size: 1.8rem;
+  }
+}
+
 .services .service__description {
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .services .service__description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .services .service__description {
+    font-size: 1.5rem;
+  }
 }
 
 .benefits {
@@ -465,11 +802,29 @@ html {
   margin-bottom: 35px;
 }
 
+@media (orientation: landscape) and (min-width: 1024px) {
+  .benefits__wrap {
+    margin-bottom: 50px;
+  }
+}
+
 .benefits__title {
   text-align: center;
   font-size: 2rem;
   margin: 0 0 15px 0;
   letter-spacing: 1px;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .benefits__title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .benefits__title {
+    font-size: 2.3rem;
+  }
 }
 
 .benefits__items-list {
@@ -483,6 +838,18 @@ html {
   line-height: 1.5;
 }
 
+@media (orientation: portrait) and (min-width: 768px) {
+  .benefits__item {
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .benefits__item {
+    font-size: 1.6rem;
+  }
+}
+
 .benefits__item::before {
   content: '';
   position: absolute;
@@ -492,6 +859,18 @@ html {
   width: 15px;
   background-color: #00ACB5;
   border-radius: 50%;
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  .benefits__item::before {
+    top: 5px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .benefits__item::before {
+    top: 6px;
+  }
 }
 
 .contact {
@@ -514,6 +893,12 @@ html {
   letter-spacing: 1px;
   text-align: center;
   color: #fff;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .contact__title {
+    font-size: 2.3rem;
+  }
 }
 
 .contact__form {
@@ -596,6 +981,12 @@ html {
   padding: 7px 7px;
   background-color: white;
   content: url("https://image.flaticon.com/icons/svg/733/733603.svg");
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .contact__wrap .contact__social {
+    font-size: 1.8rem;
+  }
 }
 
 .contact__copyright {
