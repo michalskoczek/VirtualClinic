@@ -16,21 +16,53 @@
     text-align: center;
     margin: 0 0 25px 0;
 
+    @media (orientation: portrait) and (min-width: 768px) {
+      margin: 0 0 35px 0;
+    }
+
+    @media (orientation: landscape) and (min-width: 1024px) {
+      margin: 0 0 40px 0;
+    }
+
     &__img {
       font-size: 3.5rem;
       line-height: 1.5;
       color: $second-main-color;
+
+      @media (orientation: portrait) and (min-width: 768px) {
+        font-size: 4rem;
+      }
+
+      @media (orientation: landscape) and (min-width: 1024px) {
+        font-size: 4rem;
+      }
     }
 
     &__title {
       font-size: 1.6rem;
       padding-bottom: 5px;
       letter-spacing: 1px;
+
+      @media (orientation: portrait) and (min-width: 768px) {
+        font-size: 1.8rem;
+      }
+
+      @media (orientation: landscape) and (min-width: 1024px) {
+        font-size: 1.8rem;
+      }
     }
 
     &__description {
       font-size: 1.3rem;
       line-height: 1.5;
+
+      @media (orientation: portrait) and (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+
+      @media (orientation: landscape) and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
