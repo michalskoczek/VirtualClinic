@@ -1,0 +1,49 @@
+.desktop-navigation {
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 0 25px;
+
+    &-link {
+      font-size: 2rem;
+      padding: 5px 0;
+      text-decoration: none;
+      color: #000;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover {
+        color: $second-main-color;
+        border-bottom: 1px solid $second-main-color;
+      }
+    }
+  }
+
+  &__log-in-btn {
+    display: inline-block;
+    font-size: 2rem;
+    margin-left: 25px;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 1px solid $second-main-color;
+    cursor: pointer;
+    color: #000;
+    transition: .2s linear;
+
+    &:hover {
+      background-color: $second-main-color;
+      color: #fff;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    flex-grow: 1;
+  }
+}
