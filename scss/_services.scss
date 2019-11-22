@@ -24,6 +24,25 @@
       margin: 0 0 40px 0;
     }
 
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 60px 0;
+      padding: 20px 0;
+      background-color: $bgc-gray-color;
+      //text-align: left;
+    }
+
+    &__container {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
+
     &__img {
       font-size: 3.5rem;
       line-height: 1.5;
@@ -35,6 +54,15 @@
 
       @media (orientation: landscape) and (min-width: 1024px) {
         font-size: 4rem;
+      }
+
+      @media (min-width: 1200px) {
+        //font-size: 5rem;
+        line-height: 1;
+        //flex-basis: 10%;
+        border-radius: 50%;
+        border: 1px solid $second-main-color;
+        padding: 15px 15px;
       }
     }
 
@@ -50,6 +78,13 @@
       @media (orientation: landscape) and (min-width: 1024px) {
         font-size: 1.8rem;
       }
+
+      @media (min-width: 1200px) {
+        //padding: 10px 0 0 0;
+        font-size: 2.4rem;
+        text-align: left;
+        padding-left: 90px;
+      }
     }
 
     &__description {
@@ -63,6 +98,17 @@
       @media (orientation: landscape) and (min-width: 1024px) {
         font-size: 1.5rem;
       }
+
+      @media (min-width: 1200px) {
+        width: 600px;
+        font-size: 1.7rem;
+        text-align: left;
+        padding-left: 90px;
+      }
     }
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: center;
   }
 }
