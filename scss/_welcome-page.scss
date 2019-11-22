@@ -24,6 +24,11 @@
     @media (orientation: landscape) and (min-width: 1024px) {
       height: 240px;
     }
+
+    @media (min-width: 1200px) {
+      flex-basis: 100%;
+      //background-color: rgba(255, 255, 255, 0.5);
+    }
   }
 
   &__first-word,
@@ -49,6 +54,27 @@
       font: italic 700 4.2rem/1.7 $main-font;
       letter-spacing: 1.2px;
     }
+
+    @media (min-width: 1200px) {
+      font: italic 700 6rem/1.7 $main-font;
+      background-color: transparent;
+      color: $second-main-color;
+      letter-spacing: 1.5px;
+      text-shadow: 1px 0px 1px #fff,
+        0px 1px 1px #ddd,
+        2px 1px 1px #fff,
+        1px 2px 1px #ddd,
+        3px 2px 1px #fff,
+        2px 3px 1px #ddd,
+        4px 3px 1px #fff,
+        3px 4px 1px #ddd,
+        5px 4px 1px #fff,
+        4px 5px 1px #ddd,
+        6px 5px 1px #fff,
+        5px 6px 1px #ddd,
+        7px 6px 1px #fff;
+    }
+
   }
 
   &__first-word {
@@ -96,6 +122,11 @@
       width: calc(100% - 290px);
     }
 
+    @media (min-width: 1200px) {
+      top: 30px;
+      left: 390px;
+      flex-basis: 40%;
+    }
   }
 
   &__second-word {
@@ -142,6 +173,12 @@
       left: 380px;
       width: calc(100% - 380px);
     }
+
+    @media (min-width: 1200px) {
+      top: 100px;
+      left: 550px;
+      flex-basis: 40%;
+    }
   }
 
   &__slogan {
@@ -180,6 +217,12 @@
       font: 700 3rem/1.5 $main-font;
       padding: 5px 180px 10px;
     }
+
+    @media (min-width: 1200px) {
+      height: 70px;
+      font: 400 3.6rem/1 $main-font;
+      padding: 15px 0 0 0;
+    }
   }
 
   &__bgc-image {
@@ -192,5 +235,10 @@
     background-position-x: 53%;
     opacity: 0.6;
     filter: blur(1.5px);
+
+    @media (min-width: 1200px) {
+      background-position-x: 50%;
+      width: 100%;
+    }
   }
 }
