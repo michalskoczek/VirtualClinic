@@ -22,6 +22,17 @@
           <span class="header__hamburger-inner"></span>
         </span>
       </button>
+      <nav class="desktop-navigation wrapper__desktop-navigation">
+        <ul class="desktop-navigation__list">
+          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">O nas</a></li>
+          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Usługi</a></li>
+          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Dla pacjenta</a></li>
+          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Dla lekarza</a></li>
+          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Kontakt</a></li>
+          <li class="desktop-navigation__item desktop-navigation__item--btn">
+            <a class="desktop-navigation__log-in-btn" href="/">Zaloguj</a></li>
+        </ul>
+      </nav>
     </header>
     <nav class="navigation wrapper__navigation">
       <ul class="navigation__list">
@@ -62,32 +73,43 @@
     <section class="services wrapper__services">
       <div class="service">
         <i class="service__img fas fa-pills"></i>
-        <h3 class="service__title">Recepta on-line</h3>
-        <p class="service__description">Zamów receptę on-line u&nbsp;swojego lekarza prowadzącego nie wychodząc z domu.
-        </p>
+        <div class="service__container">
+          <h3 class="service__title">Recepta on-line</h3>
+          <p class="service__description">Zamów receptę on-line u&nbsp;swojego lekarza prowadzącego nie wychodząc z
+            domu.
+          </p>
+        </div>
       </div>
       <div class="service">
         <i class="service__img fas fa-comment-medical"></i>
-        <h3 class="service__title">Konsultacja on-line</h3>
-        <p class="service__description">W czasie dni wolnych oraz przez całą dobę dostępna konsultacja medyczna.</p>
+        <div class="service__container">
+          <h3 class="service__title">Konsultacja on-line</h3>
+          <p class="service__description">W czasie dni wolnych oraz przez całą dobę dostępna konsultacja medyczna.</p>
+        </div>
       </div>
       <div class="service">
         <i class="service__img fas fa-stethoscope"></i>
-        <h3 class="service__title">Skierowanie on-line</h3>
-        <p class="service__description">Badania okresowe i&nbsp;nie tylko, zamów skierowanie u&nbsp;lekarza i&nbsp;miej
-          na
-          skrzynce.
-        </p>
+        <div class="service__container">
+          <h3 class="service__title">Skierowanie on-line</h3>
+          <p class="service__description">Badania okresowe i&nbsp;nie tylko, zamów skierowanie u&nbsp;lekarza
+            i&nbsp;miej
+            na
+            skrzynce.
+          </p>
+        </div>
       </div>
       <div class="service">
         <i class="service__img fas fa-file-medical-alt"></i>
-        <h3 class="service__title">Bank badań i wyników</h3>
-        <p class="service__description">Wszystkie wizyty, konsultacje, wyniki, skierowania i&nbsp;recepty w jednym
-          miejscu.
-        </p>
+        <div class="service__container">
+          <h3 class="service__title">Bank badań i wyników</h3>
+          <p class="service__description">Wszystkie wizyty, konsultacje, wyniki, skierowania i&nbsp;recepty w jednym
+            miejscu.
+          </p>
+        </div>
       </div>
     </section>
     <section class="benefits wrapper__benefits">
+      <img src="img/patients.jpg" alt="patients" class="benefits__wrap wrapper__benefits--image">
       <div class="benefits__wrap">
         <h3 class="benefits__title">Korzyści dla pacjenta</h3>
         <ul class="benefits__items-list">
@@ -126,6 +148,8 @@
             dofinansowywanych.</li>
         </ul>
       </div>
+      <img src="img/doctors.jpg" alt="doctors"
+        class="benefits__wrap wrapper__benefits--image wrapper__benefits--image-doctors">
     </section>
     <footer class="contact wrapper__contact">
       <div class="contact__wrap-form">
