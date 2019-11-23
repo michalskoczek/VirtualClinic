@@ -53,6 +53,7 @@
 
     @media (min-width: 1200px) {
       flex-basis: 100%;
+      max-width: 1366px;
     }
   }
 
@@ -72,6 +73,7 @@
     @media (min-width: 1200px) {
       flex-basis: 100%;
       margin-top: 120px;
+      padding-bottom: 40px;
     }
   }
 
@@ -89,8 +91,9 @@
     }
 
     @media (min-width: 1200px) {
-      flex-basis: 80%;
+      flex-basis: 90%;
       margin-top: 120px;
+      max-width: 1366px;
     }
 
     &--image {
@@ -103,6 +106,13 @@
         transform: scale(0.9);
         box-shadow: -10px 10px 3px 0 $main-color;
       }
+
+      &-doctors {
+        @media (min-width: 1200px) {
+          box-shadow: 10px 10px 3px 0 $main-color;
+        }
+      }
+
     }
   }
 
@@ -110,5 +120,10 @@
     @include transitionOpacity;
     flex-basis: 100%;
     background-color: $contact-color;
+  }
+
+  @media (min-width: 1200px) {
+    overflow: hidden;
+    margin: 0 auto;
   }
 }
