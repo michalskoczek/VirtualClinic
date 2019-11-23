@@ -1077,8 +1077,8 @@ html {
 
 @media (min-width: 1200px) {
   .benefits__wrap {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
   }
 }
 
