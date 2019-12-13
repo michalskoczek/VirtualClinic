@@ -9,6 +9,10 @@
   box-shadow: 0 0 2px 1px $second-main-color;
   cursor: pointer;
 
+  &:focus {
+    outline: 0;
+  }
+
   &__first-line {
     @include arrowLine;
     transform: rotate(135deg) translateY(-100%);
