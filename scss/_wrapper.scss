@@ -26,6 +26,23 @@
     }
   }
 
+  &__arrow {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 99;
+
+    @media (min-width: 320px) {
+      bottom: 5px;
+      right: 8px;
+    }
+
+    @media (min-width: 411px) {
+      bottom: 7px;
+      right: 12px;
+    }
+  }
+
   &__welcome-page {
     @include transitionOpacity;
     flex-basis: 100%;
