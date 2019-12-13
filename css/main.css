@@ -484,6 +484,10 @@ html {
   cursor: pointer;
 }
 
+.arrow:focus {
+  outline: 0;
+}
+
 .arrow__first-line {
   display: inline-block;
   position: absolute;
@@ -1003,6 +1007,11 @@ html {
   margin: 0 0 25px 0;
 }
 
+.services .service:hover .service__img {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 @media (orientation: portrait) and (min-width: 768px) {
   .services .service {
     margin: 0 0 35px 0;
@@ -1044,6 +1053,10 @@ html {
   font-size: 3.5rem;
   line-height: 1.5;
   color: #00ACB5;
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
