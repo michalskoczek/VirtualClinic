@@ -2,6 +2,12 @@
   display: flex;
   flex-wrap: wrap;
 
+  &__container-for-doctors {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 0 0;
+  }
+
   & div.benefits__wrap {
     @media(min-width: 1200px) {
       padding: 30px;
