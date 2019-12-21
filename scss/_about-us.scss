@@ -6,6 +6,10 @@
 
   &::after {
     @include lineAfterSection;
+
+    @media (min-width: 1900px) {
+      width: 105%;
+    }
   }
 
   &__intro,
