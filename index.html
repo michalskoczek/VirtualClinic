@@ -30,24 +30,29 @@
       </button>
       <nav class="desktop-navigation wrapper__desktop-navigation">
         <ul class="desktop-navigation__list">
-          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">O nas</a></li>
-          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Usługi</a></li>
-          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Dla pacjenta</a></li>
-          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Dla lekarza</a></li>
-          <li class="desktop-navigation__item"><a class="desktop-navigation__item-link" href="/">Kontakt</a></li>
+          <li class="desktop-navigation__item">
+            <a class="desktop-navigation__item-link desktop-navigation__about-us" href="#about-us">O nas</a></li>
+          <li class="desktop-navigation__item">
+            <a class="desktop-navigation__item-link desktop-navigation__services" href="#services">Usługi</a></li>
+          <li class="desktop-navigation__item desktop-navigation__for-patients">
+            <a class="desktop-navigation__item-link" href="#for-patients">Dla pacjenta</a></li>
+          <li class="desktop-navigation__item desktop-navigation__for-doctors">
+            <a class="desktop-navigation__item-link" href="#for-doctors">Dla lekarza</a></li>
+          <li class="desktop-navigation__item desktop-navigation__contact">
+            <a class="desktop-navigation__item-link" href="#contact">Kontakt</a></li>
           <li class="desktop-navigation__item desktop-navigation__item--btn">
-            <a class="desktop-navigation__log-in-btn" href="/">Zaloguj</a></li>
+            <a class="desktop-navigation__log-in-btn" href="#">Zaloguj</a></li>
         </ul>
       </nav>
     </header>
     <nav class="navigation wrapper__navigation">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="/">O nas</a></li>
-        <li class="navigation__item"><a href="/">Usługi</a></li>
-        <li class="navigation__item"><a href="/">Dla pacjenta</a></li>
-        <li class="navigation__item"><a href="/">Dla lekarza</a></li>
-        <li class="navigation__item"><a href="/">Kontakt</a></li>
-        <li class="navigation__item navigation__item--button"><a class="navigation__log-in-btn" href="/">Zaloguj</a>
+        <li class="navigation__item"><a href="#about-us">O nas</a></li>
+        <li class="navigation__item"><a href="#services">Usługi</a></li>
+        <li class="navigation__item"><a href="#for-patients">Dla pacjenta</a></li>
+        <li class="navigation__item"><a href="#for-doctors">Dla lekarza</a></li>
+        <li class="navigation__item"><a href="#contact">Kontakt</a></li>
+        <li class="navigation__item navigation__item--button"><a class="navigation__log-in-btn" href="#">Zaloguj</a>
         </li>
       </ul>
     </nav>
@@ -59,7 +64,7 @@
       <h2 class="welcome-page__slogan">Twoje zdrowie zawsze pod ręką - w&nbsp;Twoim telefonie</h2>
       <div class="welcome-page__bgc-image"></div>
     </section>
-    <section class="about-us wrapper__about-us">
+    <section id="about-us" class="about-us wrapper__about-us">
       <p class="about-us__intro">Aplikacja, która zapewnia sprawną i&nbsp;bezpieczna wymianę dokumentacji medycznej
         między pacjentem a&nbsp;jednostką medyczną.
       </p>
@@ -76,7 +81,7 @@
         których korzystasz.
       </p>
     </section>
-    <section class="services wrapper__services">
+    <section id="services" class="services wrapper__services">
       <div class="service">
         <i class="service__img fas fa-pills"></i>
         <div class="service__container">
@@ -114,7 +119,7 @@
         </div>
       </div>
     </section>
-    <section class="benefits wrapper__benefits">
+    <section id="for-patients" class="benefits wrapper__benefits">
       <img src="img/patients.jpg" alt="patients" class="benefits__wrap wrapper__benefits--image">
       <div class="benefits__wrap">
         <h3 class="benefits__title">Korzyści dla pacjenta</h3>
@@ -133,38 +138,40 @@
             wizytą) dokumentów z&nbsp;innej jednostki medycznej lub dokumentów własnych.</li>
         </ul>
       </div>
-      <div class="benefits__wrap">
-        <h3 class="benefits__title">Korzyści dla lekarza</h3>
-        <ul class="benefits__items-list">
-          <li class="benefits__item">Aktualne dane jednostki
-            medycznej na telefonie
-            pacjenta pobierane
-            bezpośrednio z systemów informatycznych placówek.</li>
-          <li class="benefits__item">Bezpieczne udzielanie
-            dostępu do danych
-            medycznych bez angażowania
-            personelu jednostki.</li>
-          <li class="benefits__item">Możliwość lepszej
-            realizacji wizyt przez
-            wcześniejsze otrzymanie
-            dokumentacji od pacjenta.</li>
-          <li class="benefits__item">Funkcjonalności rozwiązania
-            celują w&nbsp;wymagania
-            projektów
-            dofinansowywanych.</li>
-        </ul>
+      <div id="for-doctors" class="benefits__container-for-doctors">
+        <div class="benefits__wrap benefits__wrap--for-doctors">
+          <h3 class="benefits__title">Korzyści dla lekarza</h3>
+          <ul class="benefits__items-list">
+            <li class="benefits__item">Aktualne dane jednostki
+              medycznej na telefonie
+              pacjenta pobierane
+              bezpośrednio z systemów informatycznych placówek.</li>
+            <li class="benefits__item">Bezpieczne udzielanie
+              dostępu do danych
+              medycznych bez angażowania
+              personelu jednostki.</li>
+            <li class="benefits__item">Możliwość lepszej
+              realizacji wizyt przez
+              wcześniejsze otrzymanie
+              dokumentacji od pacjenta.</li>
+            <li class="benefits__item">Funkcjonalności rozwiązania
+              celują w&nbsp;wymagania
+              projektów
+              dofinansowywanych.</li>
+          </ul>
+        </div>
+        <img src="img/doctors.jpg" alt="doctors"
+          class="benefits__wrap wrapper__benefits--image wrapper__benefits--image-doctors">
       </div>
-      <img src="img/doctors.jpg" alt="doctors"
-        class="benefits__wrap wrapper__benefits--image wrapper__benefits--image-doctors">
     </section>
+    <div id="contact" class="contact contact__container"></div>
     <footer class="contact wrapper__contact">
       <div class="contact__wrap-form">
         <h3 class="contact__title">Skontaktuj się z nami</h3>
         <form class="contact__form">
           <input class="contact__input-name" type="text" placeholder="Imię i nazwisko">
           <input class="contact__input-mail" type="email" placeholder="E-mail">
-          <textarea class="contact__textarea" name="" id="" cols="30" rows="10"
-            placeholder="Twoja wiadomość..."></textarea>
+          <textarea class="contact__textarea" cols="30" rows="10" placeholder="Twoja wiadomość..."></textarea>
           <button class="contact__button">wyślij</button>
         </form>
       </div>
@@ -177,6 +184,7 @@
     </footer>
   </div>
   <script src="js/main.js"></script>
+  <script src="js/mobile.js"></script>
 </body>
 
 </html>
